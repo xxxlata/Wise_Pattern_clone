@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+ul,li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.nav{
+    background-color: #3c517b;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 10%;
+}
+
+.nav_left{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo i {
+    font-size: 1.5rem;
+    color: #00b9ff;
+}
+.personal_business {
+    font-size: 16px;
+}
+.personal_business span{
+    color: white;
+    font-weight: 100;
+}
+
+.personal_business :first-child{
+    color: #00b9ff; 
+    padding: 0 0.5rem 0 1rem;
+
+}
+
+.personal_business :last-child{
+    padding: 0 0 0 0.5rem;
+    color: white;
+}
+
+.nav_right{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+
+.menu a{
+    color: white;
+    padding: 0 0.5rem;
+    font-size: 16px;
+}
+.menu i {
+    padding-left: 10px;
+}
+
+button{
+    border: 0.5px solid #00b9ff;
+    border-radius: 3px;
+    background-color: #3c517b;
+}
+
+button a {
+    color:#00b9ff;
+    font-size: 16px;
+    padding: 0.5rem 1rem;
+}
+
+@media screen and (max-width:1181px) {
+    .logo :nth-child(2) {
+        display: none;
+    }
+    .nav{
+        padding: 1rem 1rem;
+    }
+}
+
+@media screen and (min-width:1181px) {
+    .logo :last-child {
+        display: none;
+    }
+    
+}
+
+
+@media screen and (max-width:972px) {   
+   .logo :nth-child(2) {
+       display: show;
+   }
+   .menu{
+       display: none;
+   }
+   .personal_business {
+       display: none;
+   }
+}
+@media screen and (min-width:972px) {
+    .logo i {
+        display: none;
+    }
+    .logo :last-child {
+        display: show;
+    }
+}
